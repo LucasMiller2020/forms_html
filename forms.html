@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="UTF-8">
   <title>Forms</title>
@@ -14,10 +14,33 @@
         placeholder="user123"
         name = "username"
         required />
-
     </label>
 
+    <label>for="password">Password</label>
+    <label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        minlength="6"
+        required />
+    </label>
 
-  </form>
-</body>
+      <fieldset>
+        <legend>Choose your animal</legend>
+
+        <label for="dog" ></label>
+        <input id="dog" type="radio" name="animal" value="dog" />
+
+        <label for="cat" ></label>
+        <input id="cat" type="radio" name="animal" value="cat" />
+
+        <label for="horse" ></label>
+        <input id="horse" type="radio" name="animal" value="horse" />
+      </fieldset>
+
+      <button>Submit</button>
+
+    </form>
+  </body>
 </html>
